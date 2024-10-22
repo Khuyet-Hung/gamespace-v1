@@ -1,0 +1,29 @@
+@import url("../helpers/_variables.less");
+// button
+.sg-btn {
+  padding: 10px 20px;
+  font-family: @primaty-font;
+  border-radius: @border-radius-m;
+  border: none;
+  outline: unset;
+  cursor: pointer;
+  font-size: @txt-size-h7;
+}
+.sg-btn--primary {
+  .sg-btn;
+  background-color: @bg-color-secondary;
+  color: @txt-color-white;
+  &:hover {
+    background-color: @bg-color-white;
+    color: @txt-color-secondary;
+  }
+}
+.sg-btn--secondary {
+  .sg-btn;
+  background-color: @bg-color-white;
+  color: @txt-color-secondary;
+  &:hover {
+    background-color: @bg-color-secondary;
+    color: @txt-color-white;
+  }
+}
